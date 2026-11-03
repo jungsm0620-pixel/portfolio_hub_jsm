@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSM | 스마트팩토리 품질관리 포트폴리오 허브</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#e0f2fe', // sky-100
+                            sky: '#0284c7',   // sky-600
+                            blue: '#1d4ed8',  // blue-700
+                            dark: '#0f172a',  // slate-900
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            font-size: 16px;
+            background-color: #ffffff;
+            color: #1e293b;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-sky-100">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-2xl font-black text-brand-blue tracking-tight">JSM</a>
+            <nav class="hidden md:flex space-x-8 font-medium text-slate-600 text-base">
+                <a href="#hero" class="hover:text-brand-sky transition-colors">홈</a>
+                <a href="#about" class="hover:text-brand-sky transition-colors">소개</a>
+                <a href="#skills" class="hover:text-brand-sky transition-colors">역량</a>
+                <a href="#projects" class="hover:text-brand-sky transition-colors">결과물</a>
+                <a href="#contact" class="hover:text-brand-sky transition-colors">연락</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- 1. 첫 화면 (Hero Section) -->
+        <section id="hero" class="py-20 md:py-28 bg-gradient-to-b from-sky-50/60 to-white border-b border-sky-100">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-sky-100 text-brand-sky font-semibold text-sm">
+                    Smart Factory Quality Control Portfolio
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">
+                    JSM
+                </h1>
+                <p class="text-xl md:text-2xl font-bold text-brand-blue leading-relaxed mb-8 max-w-3xl mx-auto">
+                    DB 설계·통계 검증·탐지 모델 개선 경험으로 품질관리를 준비하는 산업공학도, JSM입니다.
+                </p>
+                
+                <!-- Highlight Card -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-sky-200 mb-10 max-w-2xl mx-auto text-left">
+                    <div class="flex items-start space-x-4">
+                        <div class="p-3 bg-sky-100 rounded-xl text-brand-sky shrink-0 mt-1">
+                            <i class="fa-solid fa-square-poll-vertical text-xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-brand-sky uppercase tracking-wider block mb-1">Capstone Project</span>
+                            <p class="text-slate-700 text-base md:text-lg font-medium leading-relaxed">
+                                캡스톤 프로젝트에서 Jamovi를 통해 분산분석하여 금융 챗봇 인터페이스 개선안 제안
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#projects" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand-sky hover:bg-brand-blue rounded-xl shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
+                    결과물 보기
+                    <i class="fa-solid fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. 소개 (About Section) -->
+        <section id="about" class="py-16 md:py-20 border-b border-slate-100">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="flex items-center space-x-3 mb-8">
+                    <div class="w-1.5 h-7 bg-brand-sky rounded-full"></div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900">소개</h2>
+                </div>
+                <div class="bg-sky-50/50 border border-sky-100 rounded-2xl p-6 md:p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-base">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-graduation-cap text-brand-sky text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-bold text-slate-900 mb-1">전공</h3>
+                                <p class="text-slate-700">산업공학 전공</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-microchip text-brand-sky text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-bold text-slate-900 mb-1">관심 분야</h3>
+                                <p class="text-slate-700">MES기반 품질 데이터 분석 및 공정개선</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 역량 (Skills Section) -->
+        <section id="skills" class="py-16 md:py-20 border-b border-slate-100">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="flex items-center space-x-3 mb-10">
+                    <div class="w-1.5 h-7 bg-brand-sky rounded-full"></div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900">핵심 역량</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- 역량 1 -->
+                    <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-sky-300 transition-all flex flex-col">
+                        <div class="w-12 h-12 bg-sky-100 text-brand-sky rounded-xl flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">통계적 검증력</h3>
+                        <p class="text-slate-600 text-base leading-relaxed flex-grow mb-6">
+                            캡스톤 프로젝트에서 2요인 분산분석으로 의인화와 인터페이스 유형의 개별 효과 및 상호작용 효과가 통계적으로 유의한지 검증함
+                        </p>
+                        <!-- 근거 자료 버튼 -->
+                        <button onclick="openModal()" class="w-full inline-flex items-center justify-center px-4 py-2.5 text-sm font-semibold text-brand-sky bg-sky-50 hover:bg-sky-100 border border-sky-200 rounded-xl transition-colors">
+                            <i class="fa-solid fa-file-lines mr-2"></i>
+                            근거 자료 보기 (논문 HWP)
+                        </button>
+                    </div>
+
+                    <!-- 역량 2 -->
+                    <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-sky-300 transition-all flex flex-col">
+                        <div class="w-12 h-12 bg-sky-100 text-brand-sky rounded-xl flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">데이터 구조화 능력</h3>
+                        <p class="text-slate-600 text-base leading-relaxed flex-grow mb-6">
+                            교내 학술 공모전에서 지역·상황·기관·언어·현지인 등 다양한 정보의 관계를 ER 모델로 설계하고 스키마로 구현하여 해외여행 안전 지원 DB를 구축함
+                        </p>
+                        <!-- 근거 자료 버튼 -->
+                        <button onclick="openDbModal()" class="w-full inline-flex items-center justify-center px-4 py-2.5 text-sm font-semibold text-brand-sky bg-sky-50 hover:bg-sky-100 border border-sky-200 rounded-xl transition-colors">
+                            <i class="fa-solid fa-file-pdf mr-2"></i>
+                            근거 자료 보기 (공모전 PDF)
+                        </button>
+                    </div>
+
+                    <!-- 역량 3 -->
+                    <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-sky-300 transition-all flex flex-col">
+                        <div class="w-12 h-12 bg-sky-100 text-brand-sky rounded-xl flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">예측 모델링 능력</h3>
+                        <p class="text-slate-600 text-base leading-relaxed flex-grow mb-6">
+                            데이터분석 동아리에서 환경 성과와 ESG 점수의 차이를 활용해 3개 클래스를 분류하는 모델을 구축하고, 실제 기업 데이터를 입력해 그린워싱 탐지 모델을 구축하고 예측함
+                        </p>
+                        <!-- 근거 자료 버튼 -->
+                        <a href="greenwatch.html" target="_blank" class="w-full inline-flex items-center justify-center px-4 py-2.5 text-sm font-semibold text-brand-sky bg-sky-50 hover:bg-sky-100 border border-sky-200 rounded-xl transition-colors">
+                            <i class="fa-solid fa-square-poll-vertical mr-2"></i>
+                            근거 자료 보기 (그린워싱 모니터)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 결과물 (Projects Section) -->
+        <section id="projects" class="py-16 md:py-20 bg-slate-50 border-b border-slate-200">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="flex items-center justify-between mb-10">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-1.5 h-7 bg-brand-sky rounded-full"></div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">결과물 (Day 2 ~ Day 6)</h2>
+                    </div>
+                    <span class="text-sm font-medium text-slate-500">6일 포트폴리오 채우기 프로젝트</span>
+                </div>
+
+                <!-- 컴퓨터: 3열, 휴대폰: 1열 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Day 2 결과물 카드 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+                        <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
+                            <h3 class="text-lg font-bold text-brand-blue">Day 2 결과물 자리</h3>
+                            <span class="text-xs bg-slate-100 text-slate-500 font-semibold px-2.5 py-1 rounded-md">대기 중</span>
+                        </div>
+                        <div class="space-y-3 text-base text-slate-700 flex-grow">
+                            <div><strong class="text-slate-900 font-semibold">문제:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">내가 한 일:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">사용 기술:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">결과:</strong> </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 결과물 카드 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+                        <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
+                            <h3 class="text-lg font-bold text-brand-blue">Day 3 결과물 자리</h3>
+                            <span class="text-xs bg-slate-100 text-slate-500 font-semibold px-2.5 py-1 rounded-md">대기 중</span>
+                        </div>
+                        <div class="space-y-3 text-base text-slate-700 flex-grow">
+                            <div><strong class="text-slate-900 font-semibold">문제:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">내가 한 일:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">사용 기술:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">결과:</strong> </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 결과물 카드 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+                        <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
+                            <h3 class="text-lg font-bold text-brand-blue">Day 4 결과물 자리</h3>
+                            <span class="text-xs bg-slate-100 text-slate-500 font-semibold px-2.5 py-1 rounded-md">대기 중</span>
+                        </div>
+                        <div class="space-y-3 text-base text-slate-700 flex-grow">
+                            <div><strong class="text-slate-900 font-semibold">문제:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">내가 한 일:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">사용 기술:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">결과:</strong> </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 5 결과물 카드 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+                        <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
+                            <h3 class="text-lg font-bold text-brand-blue">Day 5 결과물 자리</h3>
+                            <span class="text-xs bg-slate-100 text-slate-500 font-semibold px-2.5 py-1 rounded-md">대기 중</span>
+                        </div>
+                        <div class="space-y-3 text-base text-slate-700 flex-grow">
+                            <div><strong class="text-slate-900 font-semibold">문제:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">내가 한 일:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">사용 기술:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">결과:</strong> </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 6 결과물 카드 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+                        <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
+                            <h3 class="text-lg font-bold text-brand-blue">Day 6 결과물 자리</h3>
+                            <span class="text-xs bg-slate-100 text-slate-500 font-semibold px-2.5 py-1 rounded-md">대기 중</span>
+                        </div>
+                        <div class="space-y-3 text-base text-slate-700 flex-grow">
+                            <div><strong class="text-slate-900 font-semibold">문제:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">내가 한 일:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">사용 기술:</strong> </div>
+                            <div><strong class="text-slate-900 font-semibold">결과:</strong> </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 연락 (Contact Section) -->
+        <section id="contact" class="py-16 md:py-24">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-sky-100 text-brand-sky text-2xl mb-6">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">함께 일하고 싶으신가요?</h2>
+                <p class="text-slate-600 text-lg mb-8">언제든 메일로 연락해 주시면 빠르게 답변드리겠습니다.</p>
+                <div>
+                    <a href="mailto:jungsm0620@naver.com" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand-sky hover:bg-brand-blue rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
+                        <i class="fa-regular fa-envelope mr-3 text-lg"></i>
+                        jungsm0620@naver.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 text-center text-sm">
+            <p>&copy; JSM. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- DB 공모전 근거 자료 모달 (DB Modal) -->
+    <div id="dbModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[85vh] flex flex-col overflow-hidden border border-slate-200">
+            <!-- Modal Header -->
+            <div class="px-6 py-4 bg-sky-50 border-b border-sky-100 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-database text-brand-sky text-lg"></i>
+                    <h3 class="font-bold text-slate-900 text-lg">근거 자료: 학술 공모전 DB 시스템 설계 발표자료</h3>
+                </div>
+                <button onclick="closeDbModal()" class="text-slate-400 hover:text-slate-600 text-xl font-bold px-2">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <!-- Modal Content -->
+            <div class="p-6 overflow-y-auto space-y-6 text-slate-700 text-base leading-relaxed">
+                <div>
+                    <span class="text-xs font-bold text-brand-sky uppercase tracking-wider block mb-1">Database System Design Project</span>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">해외여행 안전관리 지원을 위한 다차원 지역 정보 데이터베이스 시스템 설계</h4>
+                    <p class="text-sm text-slate-500 mb-4">장성민, 정수민, 권태영, 안유빈, 지명환, 조원현</p>
+                </div>
+
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-sm space-y-1">
+                    <p class="font-semibold text-slate-800">핵심 기술 및 구조:</p>
+                    <p class="text-slate-600">ER Diagram Design, Relational Schema Normalization, Multi-Dimensional Data Modeling, MySQL Data Mapping</p>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-2 border-b border-slate-200 pb-1">1. 설계 배경 및 목표</h5>
+                    <p class="text-sm text-slate-600 mb-2">
+                        해외여행 수요 급증에 따른 사건·사고 피해가 급증하는 반면, 기존 외교부 안전여행 시스템이나 구글 지도 등은 운영시간 미표기, 구체적 기관 정보 부족, 언어 지원 한계 등의 문제를 지니고 있었습니다.
+                    </p>
+                    <p class="text-sm text-slate-600">
+                        이에 긴급 상황 발생 시 여행객이 위치, 상황, 언어에 맞는 최적의 기관 및 현지인 도우미 정보를 신속하게 탐색할 수 있도록 <strong>다차원 지역 정보 DB 시스템</strong>을 설계하였습니다.
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-2 border-b border-slate-200 pb-1">2. ER 모델 및 데이터 구조화 설계</h5>
+                    <ul class="list-disc list-inside space-y-1.5 text-sm text-slate-600">
+                        <li><strong>지역 계층화 (1:N):</strong> <code class="text-brand-blue bg-sky-50 px-1 py-0.5 rounded">국가(Country) &rarr; 지역(Region) &rarr; 도시(City) &rarr; 기관(Institution)</code> 연결 체계 정립</li>
+                        <li><strong>문제상황-기관 매핑 (M:N):</strong> 범죄, 의료, 여권 분실, 교통사고 등 문제유형별 대응 매뉴얼(solution) 및 처리 기관(Police, Embassy, Hospital, Shelter 등)과 자원 간 다대다 관계 설계</li>
+                        <li><strong>다국어 지원 및 확장 (M:N):</strong> 각 기관별 대응 가능한 언어(Korean, English, French 등) 테이블 구축</li>
+                        <li><strong>현지인 도우미 & 리뷰 시스템 (1:N):</strong> 재외공관 미지원 시 도움을 줄 현지인 네트워크 및 기관/현지인 평가 평점(Rating)·리뷰 데이터 무결성 제약조건 구현</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-2 border-b border-slate-200 pb-1">3. 스키마 구현 및 활용 시나리오 검증</h5>
+                    <p class="text-sm text-slate-600 mb-2">
+                        Primary Key 및 Foreign Key 무결성 제약조건과 갱신 전파 규칙을 반영한 정규화 스키마 구축 완료.
+                    </p>
+                    <p class="text-sm text-slate-600">
+                        일본 삿포로 교통사고, 프랑스 파리 소매치기, 베트남 호치민 폭행 피해 등 실제 시나리오 쿼리를 작성하여 '현재 운영 시간', '지원 가능 언어', '평점 높은 기관/현지인' 조건에 부합하는 정밀 필터링 및 데이터 추출 성능을 검증했습니다.
+                    </p>
+                </div>
+            </div>
+            <!-- Modal Footer -->
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 text-right">
+                <button onclick="closeDbModal()" class="px-5 py-2 text-sm font-semibold text-white bg-brand-sky hover:bg-brand-blue rounded-xl transition-colors">
+                    닫기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal JavaScript -->
+    <script>
+        function openModal() {
+            document.getElementById('paperModal').classList.remove('hidden');
+        }
+        function closeModal() {
+            document.getElementById('paperModal').classList.add('hidden');
+        }
+        function openDbModal() {
+            document.getElementById('dbModal').classList.remove('hidden');
+        }
+        function closeDbModal() {
+            document.getElementById('dbModal').classList.add('hidden');
+        }
+        // ESC 키 눌렀을 때 모달 닫기
+        window.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+                closeDbModal();
+            }
+        });
+    </script>
+</body>
+</html>
